@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+/*ol, ul, li,*/
+  {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-image: url(../img/backg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::-moz-selection {
+  color: white;
+  background : #bb4d00;
+}
+
+::selection {
+  color: white;
+  background : #bb4d00;
+}
+
+p {
+  margin: 5px 0 10px 5px;;
+  text-align: justify;
+}
+
+a, a:visited {
+  color: #6c6f00;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin : 30px 0 10px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 700px;
+  margin: 20px auto 30px auto;
+  padding: 25px;
+}
+
+/*FORM*/
+.description {
+  color: #efefef;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 750px;
+  margin: auto;
+}
+
+textarea {
+  resize: none;
+  margin-left: 5px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+fieldset {
+  margin: 0 5px 25px 5px;
+}
+
+legend {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 3px 6px;
+  margin-left: 40px;
+}
+
+label {
+  color: #ffffff;
+}
+
+form fieldset:nth-child(1) label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin-left: 15px;
+  width: 220px;
+}
+
+label:last-of-type {
+  margin-left: 5px;
+}
+
+#first-name, #last-name, #email, #birth {
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+
+.container-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+div p:nth-child(1) {
+  flex: 1;
+  color: #ffffff;
+}
+
+div p:nth-child(2) {
+  flex: 1;
+  color: #ffffff;
+}
+
+input {
+  display: inline-block;
+}
+
+input.button {
+  width: auto;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-width: 2px;
+  border-color: #333;
+  border-radius: 5px;
+  padding: 3px 4px 4px 4px;
+  color: #333;
+  margin-top: 5px;
+}
+
+input.button:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.p-button {
+  text-align: center;
+}

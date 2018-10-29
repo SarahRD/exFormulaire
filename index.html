@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Niramit:300,400,500,600,700" rel="stylesheet">
+  <title>TP Formulaire</title>
+</head>
+
+<body>
+
+  <h1>Mes moeurs alimentaires</h1>
+
+  <p class="description">Confiez-nous ici vos habitudes et préférences concernant votre alimentation. Ainsi nous établirons un carnet de recettes gourmandes sur-mesure. Pensez à remplir le petit mot avec toutes les idées qui vous sembleront pertinentes : nous avons à coeur de vous connaître afin de vous satisfaire !</p>
+
+<section class="container">
+
+  <form class="custom-form" method="post" action="#">
+
+    <fieldset>
+      <legend>Moi</legend>
+      <p>
+        <label for="first-name">Prénom<sup>*</sup> :</label>
+        <input type="text" name="first-name" id="first-name" placeholder="ex : Tartampion" required>
+</p>
+        <p>
+          <label for="last-name">Nom<sup>*</sup> :</label>
+          <input type="text" name="last-name" id="last-name" placeholder="ex : Mercury" required>
+</p>
+          <p>
+            <label for="email">E-mail<sup>*</sup> :</label>
+            <input type="email" name="email" id="email" placeholder="ex : tart.mercury@gmx.fr" required>
+</p>
+          <p>
+            <label for="birth">Date de naissance<sup>*</sup> :</label>
+            <input type="date" name="birth" id="birth" required>
+</p>
+</fieldset>
+
+<fieldset>
+  <legend>Petit mot</legend>
+            <p>
+              <label for="message">Votre message :</label></br>
+              <textarea id="message" cols="50" rows="5"></textarea>
+            </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mon alimentation</legend>
+      <div class="container-checkbox">
+      <p>
+        Le petit-déjeûner</br>
+        <input type="checkbox" name="never" id="never">
+        <label for="never">Jamais</label></br>
+        <input type="checkbox" name="sweet" id="sweet">
+        <label for="sweet">Pain confiture</label></br>
+        <input type="checkbox" name="salty" id="salty">
+        <label for="salty">Oeufs guacamole</label></br>
+        <input type="checkbox" name="both" id="both">
+        <label for="both">Selon l'humeur</label></br>
+      </p>
+      <p>
+        Le goûter</br>
+        <input type="radio" name="snack" value="no" id="no">
+        <label for="no">J'ai pas 5 ans</label></br>
+        <input type="radio" name="snack" value="occasion-snack" id="occasion-snack">
+        <label for="occasion-snack">A l'occasion</label></br>
+        <input type="radio" name="snack" value="friday-snack" id="friday-snack">
+        <label for="friday-snack">Le vendredi réconfort</label></br>
+        <input type="radio" name="snack" value="necessary" id="necessary">
+        <label for="necessary">Indispensable !</label></br>
+      </p>
+    </div>
+
+      <p>
+        <label for="preference">Qu'est-ce qui rend votre estomac heureux ?</label>
+        <select name="user-choice" id="preference">
+              <option value="selection" disabled selected>Sélectionnez une option</option>
+              <optgroup label="A la maison">
+              <option value="daube">La daube de maman</option>
+              <option value="pizza">Le livreur et sa pizza</option>
+              <option value="apron">Enfiler mon tablier</option>
+              <option value="picard">Un four et un Picard</option>
+            </optgroup>
+            <optgroup label="En sortie">
+              <option value="snail">Des escargots au semi-gastro</option>
+              <option value="kebab">Kebaaab</option>
+              <option value="syrian">Le syrien du coin</option>
+              <option value="brewery">Classic brasserie</option>
+            </optgroup>
+          </select>
+      </p>
+    </fieldset>
+
+    <p class="p-button">
+      <input class="button" type="submit" name="submitForm" value="Pigeon voyageur">
+</p>
+
+  </form>
+
+</section>
+
+</body>
+
+</html>
